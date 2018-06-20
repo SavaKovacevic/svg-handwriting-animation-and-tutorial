@@ -1,0 +1,51 @@
+.logo-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+#taja {
+    display: block;
+    margin: 0 auto;
+    width: 20rem;
+}
+
+.taja-path {
+    stroke: #000;
+}
+
+.taja-path--t-1,
+.taja-path--t-2,
+.taja-path--aj,
+.taja-path--dot,
+.taja-path--a {
+	stroke-dasharray: 2600;
+	stroke-dashoffset: 2600;
+	stroke-width: 20;
+	animation: letter-animation 2s linear forwards;
+}
+
+.taja-path--t-2 {
+	animation-delay: .3s;
+}
+
+.taja-path--aj {
+	animation-delay: .8s;
+}
+
+.taja-path--dot {
+	animation-delay: 1.3s;
+}
+
+.taja-path--a {
+	animation-delay: -.2s;
+}
+
+@keyframes letter-animation {
+    0% {
+        stroke-dashoffset: 2600;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
